@@ -1,0 +1,17 @@
+#container{
+    display: grid;
+    border:1px solid blue;
+    width: 70%;
+    /* height: 300px; */
+
+    
+}
+#container>div{
+    border: 1px solid red;
+
+}
+.img{
+    width:289px;
+    height: auto;
+    border:1px solid yellow;
+}
