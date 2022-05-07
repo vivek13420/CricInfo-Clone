@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CricInfo-Clone/Styles/upcoming.css">
+    <script src="https://kit.fontawesome.com/de33c97a7f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="left">
+            <div id="categories">
+                <div id="live"><a href="/CricInfo-Clone/LiveScores.html">Live</a></div>
+                <div id="upcoming" ><a href="/CricInfo-Clone/upcoming.html">Upcoming</a></div>
+                <div id="result" >Result</div>
+            </div>
+            <div id="filter">
+                <div id="filter-icon"><i class="fa-solid fa-filter"></i></div>
+                <div class="multipleSelection">
+                    <div class="selectBox" onclick="showCheckboxes()">
+                        <select>
+                            <option>Formats</option>
+                        </select>
+                        <div class="overSelect"></div>
+                    </div>
+
+                    <div id="checkBoxes">
+                        <label for="first">
+                            <input type="checkbox" id="first" />
+                            International
+                        </label>
+
+                        <label for="second">
+                            <input type="checkbox" id="second" />
+                            Twenty 20
+                        </label>
+                        <label for="third">
+                            <input type="checkbox" id="third" />
+                            List A
+                        </label>
+                        <label for="fourth">
+                            <input type="checkbox" id="fourth" />
+                            Other Twenty20 matches
+                        </label>
+                    </div>
+                </div>
+                <div class="multipleSelection">
+                    <div class="selectBox1" onclick="showCheckboxes1()">
+                        <select>
+                            <option>Teams</option>
+                        </select>
+                        <div class="overSelect"></div>
+                    </div>
+
+                    <div id="checkBoxes1">
+                        <label for="first">
+                            <input type="checkbox" id="first" />
+                            Nepal
+                        </label>
+
+                        <label for="second">
+                            <input type="checkbox" id="second" />
+                            Chennai Super Kings
+                        </label>
+                        <label for="third">
+                            <input type="checkbox" id="third" />
+                            Falcons Women
+                        </label>
+                        <label for="fourth">
+                            <input type="checkbox" id="fourth" />
+                            Gujarat Titans
+                        </label>
+                        <label for="fifth">
+                            <input type="checkbox" id="fourth" />
+                            Leinster Lightning
+                        </label>
+                        <label for="sixth">
+                            <input type="checkbox" id="fourth" />
+                            North-West Warriors
+                        </label>
+                        <label for="seventh">
+                            <input type="checkbox" id="fourth" />
+                            Punjab Kings
+                        </label>
+                        <label for="eighth">
+                            <input type="checkbox" id="fourth" />
+                            Royal Challengers Bangalore
+                        </label>
+                        <label for="nineth">
+                            <input type="checkbox" id="fourth" />
+                            Warriors Women
+                        </label>
+                        <label for="tenth">
+                            <input type="checkbox" id="fourth" />
+                            Zimbabwe A
+                        </label>
+                    </div>
+                </div>
+                <div class="multipleSelection">
+                    <div class="selectBox2" onclick="showCheckboxes2()">
+                        <select>
+                            <option>Competitions</option>
+                        </select>
+                        <div class="overSelect"></div>
+                    </div>
+
+                    <div id="checkBoxes2">
+                        <label for="first">
+                            <input type="checkbox" id="first" />
+                            Indian Premier League
+                        </label>
+
+                        <label for="second">
+                            <input type="checkbox" id="second" />
+                            Cricket Ireland Inter-Provincial Limited Over Cup
+                        </label>
+                        <label for="third">
+                            <input type="checkbox" id="third" />
+                            Zimbabwe A tour of Nepal
+                        </label>
+                        <label for="fourth">
+                            <input type="checkbox" id="fourth" />
+                            FairBreak Invitational Tournament
+                        </label>
+                    </div>
+                </div>
+                <div id="reset">Reset</div>
+            </div>
+            <div id="matches">
+                <h3>TOP EVENTS</h3>
+                <div id="upcoming_matches"></div>
+            </div>
+        </div>
+        <div id="right">
+            <div id="main_div">
+                <div>
+                    <h4 id="quick_link">Quick Links</h4>
+                </div>
+                <div id="D_scoreB">
+                    <div>
+                        <img id="score_icon"
+                            src="https://cdn.iconscout.com/icon/premium/png-256-thumb/scorecard-1563330-1324402.png"
+                            alt="" />
+                    </div>
+                    <div>
+                        <h4>Desktop Scoreboard</h4>
+                        <p>
+                            A mini scoreboard that stays with you and updates all the
+                            current matches
+                        </p>
+                    </div>
+                </div>
+                <div id="series">
+                    <div><i class="fa-solid fa-rotate-left"></i></div>
+                    <div>
+                        <h4>Series Archive</h4>
+                    </div>
+                </div>
+                <div id="inter">
+                    <div><i class="fa-solid fa-arrow-right"></i></div>
+                    <div>
+                        <h4>International</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="news"></div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="/CricInfo-Clone/scripts/upcoming.js"></script>
