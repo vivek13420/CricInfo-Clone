@@ -18,7 +18,7 @@ function navbar(){
          </div> 
      </div>
      <div class="nav-links">
-        <a href="#">Series</a>
+        <a href="series.html">Series</a>
          <div id="drop-menu" class="drop-menu2">
              <div><a href="#">IPL 2022</a></div>
              <div><a href="#">Ranji Trophy</a></div>
