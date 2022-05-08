@@ -131,7 +131,7 @@ function navbar(){
  <div id="third-menu">
      <div>
          <img src="https://wassets.hscicdn.com/static/images/fantasy-home.png">
-         <a href="#" >Fantasy</a>
+         <a href="./fantasy.html" >Fantasy</a>
      </div>
      <a href="#" >Edition IN</a>
      <a href="#"><i class="fa-solid fa-moon" style="font-size: 1.40em;"></i></a>
