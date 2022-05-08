@@ -33,8 +33,9 @@
  #navbar #second-menu .nav-links > a{
     text-decoration: none;
     color: white;
-    margin-right: 30px;
+    margin-right: 25px;
     line-height: 55px;
+    /* border: 1px solid; */
 }
 
 #second-menu .nav-links #drop-menu{
@@ -54,6 +55,8 @@
     grid-template-columns: repeat(2, 1fr);
 }
 .nav-links .drop-menu3, .drop-menu6{
+    /* width: 100%; */
+    /* gap: 0; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -62,7 +65,8 @@
     padding-left: 15px;
     text-decoration: none;
     color: black;
-    padding-right: 80px;
+    width: auto;
+    padding-right: 40px;
 }
 #second-menu #drop-menu div:hover{
     background-color: aqua;
@@ -77,7 +81,7 @@
 #navbar #third-menu{
     display: flex;
     align-items: center;
-    flex: 3.5;
+    flex: 3;
     justify-content: space-evenly;
 }
 #navbar #third-menu img{
