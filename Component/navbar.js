@@ -67,7 +67,7 @@ function navbar(){
          </div> 
      </div>
      <div class="nav-links">
-        <a href="#">News</a>
+        <a href="./news.html">News</a>
          <div id="drop-menu" class="drop-menu4">
              <div><a href="#">News Home</a></div>
              <div><a href="#">Covid-19</a></div>
