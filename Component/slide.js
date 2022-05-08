@@ -25,6 +25,7 @@ let searchData =async (api_key) => {
         let data=await res.json();
 
         append(data.data)
+        // console.log(data.data)
 
     }catch(err){
         console.log(err);
@@ -40,7 +41,7 @@ function append(data){
     const arr=["Today, 7:30 PM. 48th Match. T20. DY Patil", "RESULT .47th Match. T20. Wankhede", "LIVE. 1st Match. LIST A .Dublin"];
 
     for(let i=0; i<3; i++){
-        // console.log(data[i]);
+        console.log(data[i]);
 
         let div=document.createElement("div");
         div.className="update";

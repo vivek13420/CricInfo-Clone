@@ -13,7 +13,7 @@
     flex-direction: column;
     gap: 20px;
     /* border: 1px solid red; */
-    flex: 2;
+    flex: 2.4;
 }
 #main #main-1 > div{
     width: 100%;
@@ -22,22 +22,23 @@
     /* border: 1px solid red; */
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     border-radius: 10px;
+    /* line-height: 10px; */
 }
 #main #main-1 > div h3{
     font-size: 13px; 
     font-weight: 600;
     padding: 10px;
     border-bottom: 0.1px solid rgb(216, 216, 216);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 #main #main-1 > div .list{
     display: flex;
     gap: 15px;
-    /* line-height: 35px; */
-    padding: 10px;  
+    /* line-height: 1px; */
+    /* padding-top: 10px;   */
     padding-left: 20px;
-    padding-bottom: 20px;
-    font-size: 15px;
+    padding: 10px;
+    font-size: 13px;
     align-items: center;
 }
 #main #main-1 > div .list:hover{
@@ -51,13 +52,16 @@
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
-    flex: 5;
+    flex: 5.5;
 }
 #main #main-2 #latest-news{
-    /* border: 1px solid red; */
+    /* border: 2px solid blue; */
     /* height: 200px; */
+    display: flex;
+    flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     border-radius: 10px;
+    margin-bottom: 20px;
     /* padding: 20px; */
 }
 #main #main-2 #latest-news .headline{
@@ -71,7 +75,8 @@
 #latest-news .headline p{
     font-size: 12px;
     /* font-weight: bold; */
-    padding-top: 2.5px;
+    padding-top: 3px;
+    color: gray;
 }
 #main #main-2 #latest-news .scoreDiv{
     line-height: 30px;
@@ -84,31 +89,25 @@
 #latest-news .scoreDiv p:nth-child(1){
     font-weight: bold;
 }
-#latest-news .scoreDiv div{
+#latest-news .scoreDiv .score1, .score2{
     display: flex;
-    justify-content: space-between;
-    font-size: 18px;
-    font-weight: bold;
+    padding-bottom: 10px;
+    /* justify-content: space-between; */
+    /* font-size: 18px; */
 }
-#latest-news .scoreDiv .score1{
-    color: gray;
+.scoreDiv .score1 img, .score2 img{
+    flex: 0.3;
+    /* width: 10px; */
+    padding-right: 10px;
+    height: 30px;
 }
-#latest-news .scoreDiv .score1 p{
-    font-weight: bold;
-    font-size: 18px;
+.scoreDiv .score1 h4, .score2 h4{
+    flex: 5;
+}
+.scoreDiv .score1 h3, .score2 h3{
+    flex: 0.5;
 }
 
-#latest-news .scoreDiv .score2 p{
-    font-size: 13px;
-    font-weight: lighter;
-    flex: 1.1;
-}
-#latest-news .scoreDiv .score2 h4{
-    flex: 7;
-}
-#latest-news .scoreDiv .score2 span{
-    flex: 0.2;
-}
 #main #main-2 #latest-news .shortInfo{
     padding: 15px;
     border-bottom: 0.1px solid rgb(216, 216, 216);
@@ -124,6 +123,7 @@
     width: 100%;
     height: 350px;
     border-radius: 10px;
+    cursor: pointer;
 }
 #latest-news .shortInfo h3{
     font-size: 18px;
@@ -137,6 +137,7 @@
     width: 50%;
     height: 150px;
     border-radius: 10px;
+    cursor: pointer;
 }
 #latest-news .discussion h3{
     font-size: 17px;
@@ -147,6 +148,9 @@
     grid-template-columns: repeat(2, 1fr);
     padding: 15px;
     border-bottom: 0.1px solid rgb(216, 216, 216);
+}
+#latest-news .pointsDiv div i{
+    color: #1BB2F7;
 }
 #latest-news .pointsDiv div{
     display: flex;
@@ -165,11 +169,13 @@
 }
 #latest-news .additionalInfo div{
     padding: 10px;
+    width: 100%;
 }
 #latest-news .additionalInfo img{
-    width: 200px;
+    width: 100%;
     height: 130px;
     border-radius: 10px;
+    cursor: pointer;
 }
 #latest-news .additionalInfo p{
     padding-top: 10px;
@@ -180,7 +186,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    flex: 2.5;
+    flex: 2.7;
 }
 #main #main-3 #news{
     width: 100%;
@@ -205,8 +211,8 @@
     /* line-height: 35px; */
     padding: 10px;  
     padding-left: 20px;
-    padding-bottom: 20px;
-    font-size: 13px;
+    padding-bottom: 10px;
+    font-size: 12px;
     align-items: center;
     font-weight: 600;
 
@@ -228,6 +234,8 @@
     gap: 20px;
     flex-direction: column;
     padding: 20px;
+    font-size: 13px;
+    line-height: 20px;
     border-bottom: 0.1px solid rgb(216, 216, 216);
 }
 #main #main-3 > #random-news > div:last-child{
@@ -237,6 +245,6 @@
 #main #main-3 > #random-news > div img{
     margin: auto;
     width: 99%;
-    height: 200px;
+    height: 150px;
     border-radius: 10px;
 }

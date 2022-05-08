@@ -67,7 +67,7 @@ function navbar(){
          </div> 
      </div>
      <div class="nav-links">
-        <a href="#">News</a>
+        <a href="./news.html">News</a>
          <div id="drop-menu" class="drop-menu4">
              <div><a href="#">News Home</a></div>
              <div><a href="#">Covid-19</a></div>
@@ -131,7 +131,7 @@ function navbar(){
  <div id="third-menu">
      <div>
          <img src="https://wassets.hscicdn.com/static/images/fantasy-home.png">
-         <a href="#" >Fantasy</a>
+         <a href="./fantasy.html" >Fantasy</a>
      </div>
      <a href="#" >Edition IN</a>
      <a href="#"><i class="fa-solid fa-moon" style="font-size: 1.40em;"></i></a>
