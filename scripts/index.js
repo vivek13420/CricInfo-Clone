@@ -8,7 +8,7 @@ document.getElementById("navbar").innerHTML=navbar();
 
 import api from "../Component/live_score_update_api.js";
 
-// console.log(api);
+console.log(api);
 
  const keySeries=["IPL 2022","FairBreak","Ranji Trophy","Bangladesh v Sri Lanka","Zimbabwe v Namibia","County Div1","County Div2","Women's Championship","World Test Championship","World Cup Super League"];
 
@@ -100,10 +100,10 @@ function appendNews(ID, arr){
 };
 
 function appendAllData(ID, arr){
-    
+    let div=document.createElement("div");
+    div.id="latest-news"
+
     arr.forEach((ele) => {
-        let mainDiv=document.createElement("div");
-        mainDiv.id="latest-news"
         
         //------------headlines
         let headlineDiv=document.createElement("div");
@@ -122,24 +122,20 @@ function appendAllData(ID, arr){
         let result=document.createElement("p");
         result.innerText=ele.scoreDiv.title;
         let div1=document.createElement("div");
-            let logo1=document.createElement("img");
-            logo1.src=ele.scoreDiv.team1.logo;
             let team1=document.createElement("h4");
             team1.innerText=ele.scoreDiv.team1.name;
-            let score1=document.createElement("h3");
+            let score1=document.createElement("p");
             score1.innerText=ele.scoreDiv.team1.score;
-        div1.append(logo1,team1, score1);
+        div1.append(team1, score1);
         div1.className="score1";
         let div2=document.createElement("div");
-            let logo2=document.createElement("img");
-            logo2.src=ele.scoreDiv.team2.logo;
             let team2=document.createElement("h4");
             team2.innerText=ele.scoreDiv.team2.name;
             let score2=document.createElement("p");
             score2.innerText=ele.scoreDiv.team2.over;
-            let span=document.createElement("h3");
+            let span=document.createElement("span");
             span.innerText=ele.scoreDiv.team2.score;
-        div2.append(logo2,team2, score2, span);
+        div2.append(team2, score2, span);
         div2.className="score2";    
         let win=document.createElement("p");
         win.innerText=ele.scoreDiv.win;
@@ -211,15 +207,15 @@ function appendAllData(ID, arr){
                 title.innerText=e.title;
                 div5.append(img, title);
                 additinalInfo.append(div5);
-                // console.log(count);
+                console.log(count);
             }
-        });
+        })
         
         // console.log(ID);
         
-        mainDiv.append(headlineDiv, scoreDiv, shotInfoDiv, discussionDiv, pointsDiv, additinalInfo);
+        div.append(headlineDiv, scoreDiv, shotInfoDiv, discussionDiv, pointsDiv, additinalInfo);
     
-        document.getElementById(ID).append(mainDiv);
+        document.getElementById(ID).append(div);
     });
 }
 
