@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Styles/style.css" />
+    <link rel="stylesheet" href="./Styles/navbar.css">
+    <link rel="stylesheet" href="./Styles/Live.css" />
     <script src="https://kit.fontawesome.com/de33c97a7f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,17 +15,18 @@
 </head>
 
 <body>
+    <div id="navbar"></div>
     <div id="container">
         <div id="left">
             <div id="categories">
-                <div id="live" class="act"><a href="/CricInfo-Clone/LiveScores.html">Live</a></div>
+                <div id="live" class="act"><a href="/CricInfo-Clone/Live.html">Live</a></div>
                 <div id="upcoming" class="active"><a href="/CricInfo-Clone/upcoming.html">Upcoming</a></div>
                 <div id="result" class="active">Result</div>
             </div>
             <div id="filter">
                 <div id="filter-icon"><i class="fa-solid fa-filter"></i></div>
                 <div class="multipleSelection">
-                    <div class="selectBox" onclick="showCheckboxes()">
+                    <div class="selectBox" id="func1">
                         <select>
                             <option>Formats</option>
                         </select>
@@ -51,7 +53,7 @@
                     </div>
                 </div>
                 <div class="multipleSelection">
-                    <div class="selectBox1" onclick="showCheckboxes1()">
+                    <div class="selectBox1" id="func2">
                         <select>
                             <option>Teams</option>
                         </select>
@@ -103,7 +105,7 @@
                     </div>
                 </div>
                 <div class="multipleSelection">
-                    <div class="selectBox2" onclick="showCheckboxes2()">
+                    <div class="selectBox2" id="func3">
                         <select>
                             <option>Competitions</option>
                         </select>
@@ -175,4 +177,4 @@
 </body>
 
 </html>
-<script src="./scripts/LiveScores.js"></script>
+<script src="./scripts/Live.js" type="module"></script>

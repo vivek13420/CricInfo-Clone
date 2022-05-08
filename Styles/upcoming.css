@@ -18,9 +18,8 @@ body{
 }
 
 #left,#right{
-
     
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 /* ------------------------------------------- Categories Section ---------------------------------------------------- */
@@ -223,6 +222,7 @@ a:hover{
     padding: 10px;
     border-radius: 10px 10px 0px 0px;
     margin-bottom: 0px;
+    margin-top: 30px;
 }
 
 /* ------------------------------------------- Right Div ---------------------------------------------------- */
@@ -235,7 +235,7 @@ a:hover{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border: 1px solid rgb(231, 227, 227);
     border-radius: 10px;
-    line-height: 15px;
+    line-height: 30px;
     margin-bottom: 20px;
     
 }

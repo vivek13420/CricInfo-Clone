@@ -1,10 +1,12 @@
-// https://api.cricapi.com/v1/matches?apikey=088b9677-4844-4991-819b-bb1a4eee50c7&offset=0
 
-
+import navbar from "../Component/navbar.js";
+let nav = navbar();
+document.getElementById("navbar").innerHTML = nav
 
 
 var show = true;
   
+document.getElementById("func1").addEventListener("click",showCheckboxes)
 function showCheckboxes() {
     var checkboxes = 
         document.getElementById("checkBoxes");
@@ -14,6 +16,9 @@ function showCheckboxes() {
         checkboxes.style.marginTop = "12px"
         checkboxes.style.width = "300px"
         checkboxes.style.boxShadow = "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px";
+        checkboxes.style.position = "absolute"
+        checkboxes.style.backgroundColor = "white"
+        checkboxes.style.padding = "10px"
         show = false;
     } else {
         checkboxes.style.display = "none";
@@ -21,6 +26,7 @@ function showCheckboxes() {
     }
 }
 
+document.getElementById("func2").addEventListener("click",showCheckboxes1)
 function showCheckboxes1() {
     var checkboxes = 
         document.getElementById("checkBoxes1");
@@ -30,6 +36,9 @@ function showCheckboxes1() {
         checkboxes.style.marginTop = "12px"
         checkboxes.style.width = "300px"
         checkboxes.style.boxShadow = "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px";
+        checkboxes.style.position = "absolute"
+        checkboxes.style.backgroundColor = "white"
+        checkboxes.style.padding = "10px"
         show = false;
     } else {
         checkboxes.style.display = "none";
@@ -37,7 +46,7 @@ function showCheckboxes1() {
     }
 }
 
-
+document.getElementById("func3").addEventListener("click",showCheckboxes2)
 function showCheckboxes2() {
     var checkboxes = 
         document.getElementById("checkBoxes2");
@@ -47,6 +56,10 @@ function showCheckboxes2() {
         checkboxes.style.marginTop = "12px"
         checkboxes.style.width = "300px"
         checkboxes.style.boxShadow = "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px";
+        checkboxes.style.position = "absolute"
+        checkboxes.style.backgroundColor = "white"
+        checkboxes.style.backgroundColor = "white"
+        checkboxes.style.padding = "10px"
         show = false;
     } else {
         checkboxes.style.display = "none";
@@ -78,7 +91,7 @@ function append(data){
 
        let box = document.createElement("div");
        box.style.padding = "15px"
-    //    box.style.border = "1px solid black"
+       box.style.lineHeight = "30px"
        box.style.boxShadow = "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px";
        let name1 = document.createElement("p");
        name1.style.fontSize = "12px"
@@ -149,7 +162,7 @@ function newsData(data){
         image.style.borderRadius = "10px"
         image.src = el.image_url
         image.style.width = "300px"
-        let title = document.createElement("h4");
+        let title = document.createElement("h5");
         title.innerText = el.title
         title.style.marginBottom = "0px"
 

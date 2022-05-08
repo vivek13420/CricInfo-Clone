@@ -18,9 +18,8 @@ body{
 }
 
 #left,#right{
-
     
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 /* ------------------------------------------- Categories Section ---------------------------------------------------- */
@@ -40,13 +39,6 @@ body{
 }
 
 
-
-/* #categories > div:active{
-
-    border-bottom: 4px solid skyblue;
-   
-} */
-
 #live{
     border-bottom: 2px solid skyblue;
 }
@@ -58,23 +50,16 @@ body{
 #filter{
 
     display: flex;
-    margin-top: 30px;
-    /* text-align: center; */
-    /* padding: 10px; */
+    margin-top: 30px;  
     height: 40px;
-    /* align-items: center; */
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    /* border: 1px solid grey; */
     border-radius: 10px;
     padding: 0px 10px 0px 10px;
 }
 
 #filter select{
 
-    border: none;
-    /* border-style: none; */
-    /* padding: 0px 20px 0px 0px; */
-    /* border-left: 1px solid grey; */
+    border: none;   
     padding-top: 13px;
 }
 
@@ -139,13 +124,14 @@ a:hover{
     display: none;
     /* border: 1px #8DF5E4 solid; */
     /* position: relative; */
+    padding: 10px;
+    background-color: white;
     
 }
 
 
 #checkBoxes label {
     display: block;
-    z-index: 1;
 }
 
 /* -- Teams -- */
@@ -175,6 +161,8 @@ a:hover{
 #checkBoxes1 {
     display: none;
     /* border: 1px #8DF5E4 solid; */
+    padding: 10px;
+    background-color: white;
 }
 
 #checkBoxes1 label {
@@ -208,6 +196,8 @@ a:hover{
 #checkBoxes2 {
     display: none;
     /* border: 1px #8DF5E4 solid; */
+    padding: 10px;
+    background-color: white;
 }
 
 #checkBoxes2 label {
@@ -220,6 +210,15 @@ a:hover{
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+}
+
+#live_matches #box1{
+
+    /* border: 1px solid black; */
+    line-height: 35px;
+
+
 }
 
 #matches > h3{
@@ -228,6 +227,7 @@ a:hover{
     padding: 10px;
     border-radius: 10px 10px 0px 0px;
     margin-bottom: 0px;
+    margin-top: 30px;
     
     
 }
@@ -242,7 +242,7 @@ a:hover{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border: 1px solid rgb(231, 227, 227);
     border-radius: 10px;
-    line-height: 15px;
+    line-height: 35px;
     margin-bottom: 20px;
     
 }
