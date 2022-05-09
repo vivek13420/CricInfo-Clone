@@ -6,7 +6,7 @@ function navbar(){
  <div id="second-menu"> 
      <!-- nav-links -->
      <div class="nav-links">
-        <a href="#">Live Scores</a>
+        <a href="Live.html">Live Scores</a>
          <div id="drop-menu" class="drop-menu1">
              
              <div><a href="#">Lives Scores Home</a></div>
