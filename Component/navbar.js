@@ -86,7 +86,7 @@ function navbar(){
          </div> 
      </div>
      <div class="nav-links">
-        <a href="#">Videos</a>
+        <a href="videos.html">Videos</a>
          <div id="drop-menu" class="drop-menu6">
              <div><a href="#">Video Home</a></div>
              <div><a href="#">T20 Time Out</a></div>
