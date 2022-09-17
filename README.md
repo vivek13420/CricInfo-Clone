@@ -8,7 +8,7 @@ This is great pleasure for us we successfully completed the task of project in g
 Live Link - https://a-clone-of-espncricinfo.netlify.app/
 
 
-Contributing
+⏩ Team Members
 
 ➡️ Dinesh Karde
 
